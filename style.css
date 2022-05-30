@@ -215,10 +215,8 @@ main {
 button {
   margin:auto;
 }
-footer p {
-  display:flex;
+.dev {
+  text-align: center;
 }
-i {
-  margin:auto;
-}
+
 }
