@@ -125,14 +125,36 @@ cursor:pointer;
     right: 0;
     color:#ffff00;
   }
-  p i {
-    font-size:0.7rem;
-  }
   p i spam {
-    font-size:0.7rem;
+    font-size:1.2rem;
+    text-align: center;
   }
 
   /*modal*/
+
+  .img {
+    width:25.0rem;
+    position: fixed;
+    margin: 10% auto;
+    padding: 0.9rem 1.2rem;
+  }
+  #abrirModalShows {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  li img {
+    border:0.1rem solid yellow;
+    width:9.3rem;
+    height:8.1rem;
+    border-radius: 3.0rem;
+  }
+  
+li img:hover {
+  width:100%;
+  height:100%;
+  position:static;
+}
 
   .modal {
     width:60%;
@@ -142,16 +164,15 @@ cursor:pointer;
     right: 25%;
     bottom: 30%;
     left: 20%;
-    position:fixed;
+    position: fixed;
     font-family:'mulish',sans-serif;
-    background-image: url(images/fundo.jpg);
-    background-size: cover;
+    background-image: url("images/fundo.jpg");
     z-index:99999;
     opacity: 0;
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
-    pointer-events: none;
+    pointer-events:none;
     border-radius:0.3rem;
   }
   
@@ -165,7 +186,7 @@ pointer-events: auto;
   }
   .modal > div {
     width:25.0rem;
-    position:relative;
+    position: fixed;
     margin: 10% auto;
     padding: 0.9rem 1.2rem;
     background:#ffff00;
@@ -182,11 +203,8 @@ pointer-events: auto;
     border-radius:50%;
     font-size: 1rem;
     color:black;
+    font-weight: bold;
   }
-  #fecharModal {
-border:1px solid #ffff00;
-  }
-
   @media (max-width: 58.7rem) {
     .page {
       width: 25rem;
@@ -217,6 +235,14 @@ button {
 }
 .dev {
   text-align: center;
+  margin-bottom: 1rem;
 }
-
+#abrirModalShows {
+  border:1px solid yellow;
+  
+}
+li img {
+height:3.7rem;
+width:3.1rem;
+}
 }
